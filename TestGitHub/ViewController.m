@@ -7,7 +7,6 @@
 //
 
 #import "ViewController.h"
-#import "FirstViewController.h"
 
 @interface ViewController ()
 
@@ -59,10 +58,10 @@
 
 -(void)btnClickedGoToNextVC:(UIButton *)sender
 {
-    dispatch_async(dispatch_get_main_queue(), ^{
-        FirstViewController *objFirstViewController = [[FirstViewController alloc]init];
-        [self.navigationController pushViewController:objFirstViewController animated:YES];
-    });
+//    dispatch_async(dispatch_get_main_queue(), ^{
+//        FirstViewController *objFirstViewController = [[FirstViewController alloc]init];
+//        [self.navigationController pushViewController:objFirstViewController animated:YES];
+//    });
     
 }
 
