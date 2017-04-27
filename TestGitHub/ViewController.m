@@ -49,6 +49,7 @@
     [self.view addSubview:btnGoToNextVC];
     
     
+    
     [self.view addConstraint:[NSLayoutConstraint constraintWithItem:btnGoToNextVC attribute:NSLayoutAttributeTop relatedBy:NSLayoutRelationEqual toItem:lblTitle attribute:NSLayoutAttributeBottom multiplier:1.0 constant:0.0]];
     [self.view addConstraint:[NSLayoutConstraint constraintWithItem:btnGoToNextVC attribute:NSLayoutAttributeCenterX relatedBy:NSLayoutRelationEqual toItem:self.view attribute:NSLayoutAttributeCenterX multiplier:1.0 constant:0.0]];
     
