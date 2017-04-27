@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "FirstViewController.h"
+#import "BranchViewController.h"
 
 @interface ViewController ()
 
@@ -51,6 +52,26 @@
     
     [btnGoToNextVC layoutIfNeeded];
     
+    
+    
+    
+    
+    UIButton *btnGoToBranchVC = [[UIButton alloc]init];
+    [btnGoToBranchVC setTitle:@"Go To Branch VC" forState:UIControlStateNormal];
+    [btnGoToBranchVC addTarget:self action:@selector(btnClickedGoToBranchVC:) forControlEvents:UIControlEventTouchUpInside];
+    [btnGoToBranchVC setTranslatesAutoresizingMaskIntoConstraints:NO];
+    [btnGoToBranchVC setBackgroundColor:[UIColor blackColor]];
+    [btnGoToBranchVC.layer setCornerRadius:5];
+    [self.view addSubview:btnGoToBranchVC];
+    
+    
+    [self.view addConstraint:[NSLayoutConstraint constraintWithItem:btnGoToBranchVC attribute:NSLayoutAttributeTop relatedBy:NSLayoutRelationEqual toItem:btnGoToNextVC attribute:NSLayoutAttributeBottom multiplier:1.0 constant:0.0]];
+    [self.view addConstraint:[NSLayoutConstraint constraintWithItem:btnGoToBranchVC attribute:NSLayoutAttributeCenterX relatedBy:NSLayoutRelationEqual toItem:self.view attribute:NSLayoutAttributeCenterX multiplier:1.0 constant:0.0]];
+    
+    [btnGoToBranchVC layoutIfNeeded];
+
+    
+    
 }
 
 
@@ -62,7 +83,14 @@
     });
     
 }
-
+-(void)btnClickedGoToBranchVC:(UIButton *)sender
+{
+    dispatch_async(dispatch_get_main_queue(), ^{
+        BranchViewController *objBranchViewController = [[BranchViewController alloc]init];
+        [self.navigationController pushViewController:objBranchViewController animated:YES];
+    });
+    
+}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
