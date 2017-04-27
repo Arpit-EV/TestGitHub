@@ -20,6 +20,7 @@
     // Do any additional setup after loading the view, typically from a nib.
     [[[[UIApplication sharedApplication] windows] objectAtIndex:0] setBackgroundColor:[UIColor whiteColor]];
     
+    
     UILabel *lblTitle = [[UILabel alloc]init];
     [lblTitle setText:@"Click the button bellow to go to next View Controller"];
     [lblTitle setNumberOfLines:0];
