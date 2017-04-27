@@ -15,7 +15,6 @@
 		2B0C73321EB2134C00FD4B31 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B0C73301EB2134C00FD4B31 /* LaunchScreen.storyboard */; };
 		2DCE54991EB2155700157C4E /* BranchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DCE54981EB2155700157C4E /* BranchViewController.m */; };
 		2B0C733B1EB2153A00FD4B31 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B0C733A1EB2153A00FD4B31 /* FirstViewController.m */; };
-		2B0C733E1EB2190400FD4B31 /* ArpitsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B0C733D1EB2190400FD4B31 /* ArpitsViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,8 +32,6 @@
 		2DCE54981EB2155700157C4E /* BranchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BranchViewController.m; sourceTree = "<group>"; };
 		2B0C73391EB2153A00FD4B31 /* FirstViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
 		2B0C733A1EB2153A00FD4B31 /* FirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
-		2B0C733C1EB2190400FD4B31 /* ArpitsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArpitsViewController.h; sourceTree = "<group>"; };
-		2B0C733D1EB2190400FD4B31 /* ArpitsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArpitsViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,8 +72,6 @@
 				2DCE54981EB2155700157C4E /* BranchViewController.m */,
 				2B0C73391EB2153A00FD4B31 /* FirstViewController.h */,
 				2B0C733A1EB2153A00FD4B31 /* FirstViewController.m */,
-				2B0C733C1EB2190400FD4B31 /* ArpitsViewController.h */,
-				2B0C733D1EB2190400FD4B31 /* ArpitsViewController.m */,
 				2B0C732B1EB2134C00FD4B31 /* Main.storyboard */,
 				2B0C732E1EB2134C00FD4B31 /* Assets.xcassets */,
 				2B0C73301EB2134C00FD4B31 /* LaunchScreen.storyboard */,
@@ -166,7 +161,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2B0C733E1EB2190400FD4B31 /* ArpitsViewController.m in Sources */,
 				2B0C732A1EB2134C00FD4B31 /* ViewController.m in Sources */,
 				2B0C73271EB2134C00FD4B31 /* AppDelegate.m in Sources */,
 				2DCE54991EB2155700157C4E /* BranchViewController.m in Sources */,

@@ -53,13 +53,6 @@
     
     [btnGoToNextVC layoutIfNeeded];
     
-    UIButton *btnGoToArpitsVC = [[UIButton alloc]init];
-    [btnGoToArpitsVC setTitle:@"Go To Arpits VC" forState:UIControlStateNormal];
-    [btnGoToArpitsVC addTarget:self action:@selector(btnClickedGoToArpitsVC:) forControlEvents:UIControlEventTouchUpInside];
-    [btnGoToArpitsVC setTranslatesAutoresizingMaskIntoConstraints:NO];
-    [btnGoToArpitsVC setBackgroundColor:[UIColor blackColor]];
-    [btnGoToArpitsVC.layer setCornerRadius:5];
-    [self.view addSubview:btnGoToArpitsVC];
     
     
     [self.view addConstraint:[NSLayoutConstraint constraintWithItem:btnGoToArpitsVC attribute:NSLayoutAttributeBottom relatedBy:NSLayoutRelationEqual toItem:self.view attribute:NSLayoutAttributeBottomMargin multiplier:1.0 constant:0.0]];
@@ -103,14 +96,7 @@
     
 }
 
--(void)btnClickedGoToArpitsVC:(UIButton *)sender
-{
-    dispatch_async(dispatch_get_main_queue(), ^{
-        ArpitsViewController *objArpitsViewController = [[ArpitsViewController alloc]init];
-        [self.navigationController pushViewController:objArpitsViewController animated:YES];
-    });
-    
-}
+
 
 
 - (void)didReceiveMemoryWarning {
