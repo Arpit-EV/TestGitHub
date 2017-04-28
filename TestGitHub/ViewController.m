@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "MyViewController.h"
 
 @interface ViewController ()
 
@@ -37,31 +38,31 @@
     
     
     
-    UIButton *btnGoToNextVC = [[UIButton alloc]init];
-    [btnGoToNextVC setTitle:@"Go To Next VC" forState:UIControlStateNormal];
-    [btnGoToNextVC addTarget:self action:@selector(btnClickedGoToNextVC:) forControlEvents:UIControlEventTouchUpInside];
-    [btnGoToNextVC setTranslatesAutoresizingMaskIntoConstraints:NO];
-    [btnGoToNextVC setBackgroundColor:[UIColor blackColor]];
-    [btnGoToNextVC.layer setCornerRadius:5];
-    [self.view addSubview:btnGoToNextVC];
+    UIButton *btnGoToMyVC = [[UIButton alloc]init];
+    [btnGoToMyVC setTitle:@"Go To Next VC" forState:UIControlStateNormal];
+    [btnGoToMyVC addTarget:self action:@selector(btnClickedGoToMyVC:) forControlEvents:UIControlEventTouchUpInside];
+    [btnGoToMyVC setTranslatesAutoresizingMaskIntoConstraints:NO];
+    [btnGoToMyVC setBackgroundColor:[UIColor blackColor]];
+    [btnGoToMyVC.layer setCornerRadius:5];
+    [self.view addSubview:btnGoToMyVC];
     
     
-    [self.view addConstraint:[NSLayoutConstraint constraintWithItem:btnGoToNextVC attribute:NSLayoutAttributeTop relatedBy:NSLayoutRelationEqual toItem:lblTitle attribute:NSLayoutAttributeBottom multiplier:1.0 constant:0.0]];
-    [self.view addConstraint:[NSLayoutConstraint constraintWithItem:btnGoToNextVC attribute:NSLayoutAttributeCenterX relatedBy:NSLayoutRelationEqual toItem:self.view attribute:NSLayoutAttributeCenterX multiplier:1.0 constant:0.0]];
+    [self.view addConstraint:[NSLayoutConstraint constraintWithItem:btnGoToMyVC attribute:NSLayoutAttributeBottom relatedBy:NSLayoutRelationEqual toItem:self.view attribute:NSLayoutAttributeBottomMargin multiplier:1.0 constant:0.0]];
+    [self.view addConstraint:[NSLayoutConstraint constraintWithItem:btnGoToMyVC attribute:NSLayoutAttributeCenterX relatedBy:NSLayoutRelationEqual toItem:self.view attribute:NSLayoutAttributeCenterX multiplier:1.0 constant:0.0]];
     
-    [btnGoToNextVC layoutIfNeeded];
+    [btnGoToMyVC layoutIfNeeded];
     
     
     
 }
 
 
--(void)btnClickedGoToNextVC:(UIButton *)sender
+-(void)btnClickedGoToMyVC:(UIButton *)sender
 {
-//    dispatch_async(dispatch_get_main_queue(), ^{
-//        FirstViewController *objFirstViewController = [[FirstViewController alloc]init];
-//        [self.navigationController pushViewController:objFirstViewController animated:YES];
-//    });
+    dispatch_async(dispatch_get_main_queue(), ^{
+        MyViewController *objMyViewController = [[MyViewController alloc]init];
+        [self.navigationController pushViewController:objMyViewController animated:YES];
+    });
     
 }
 
