@@ -38,6 +38,22 @@
     
     
     
+//    UIButton *btnGoToMyVC = [[UIButton alloc]init];
+//    [btnGoToMyVC setTitle:@"Go To Next VC" forState:UIControlStateNormal];
+//    [btnGoToMyVC addTarget:self action:@selector(btnClickedGoToMyVC:) forControlEvents:UIControlEventTouchUpInside];
+//    [btnGoToMyVC setTranslatesAutoresizingMaskIntoConstraints:NO];
+//    [btnGoToMyVC setBackgroundColor:[UIColor blackColor]];
+//    [btnGoToMyVC.layer setCornerRadius:5];
+//    [self.view addSubview:btnGoToMyVC];
+//    
+//    
+//    [self.view addConstraint:[NSLayoutConstraint constraintWithItem:btnGoToMyVC attribute:NSLayoutAttributeBottom relatedBy:NSLayoutRelationEqual toItem:self.view attribute:NSLayoutAttributeBottomMargin multiplier:1.0 constant:0.0]];
+//    [self.view addConstraint:[NSLayoutConstraint constraintWithItem:btnGoToMyVC attribute:NSLayoutAttributeCenterX relatedBy:NSLayoutRelationEqual toItem:self.view attribute:NSLayoutAttributeCenterX multiplier:1.0 constant:0.0]];
+//    
+//    [btnGoToMyVC layoutIfNeeded];
+    
+    
+    
     UIButton *btnGoToMyVC = [[UIButton alloc]init];
     [btnGoToMyVC setTitle:@"Go To Next VC" forState:UIControlStateNormal];
     [btnGoToMyVC addTarget:self action:@selector(btnClickedGoToMyVC:) forControlEvents:UIControlEventTouchUpInside];
@@ -51,11 +67,18 @@
     [self.view addConstraint:[NSLayoutConstraint constraintWithItem:btnGoToMyVC attribute:NSLayoutAttributeCenterX relatedBy:NSLayoutRelationEqual toItem:self.view attribute:NSLayoutAttributeCenterX multiplier:1.0 constant:0.0]];
     
     [btnGoToMyVC layoutIfNeeded];
-    
-    
-    
+
 }
 
+
+//-(void)btnClickedGoToMyVC:(UIButton *)sender
+//{
+//    dispatch_async(dispatch_get_main_queue(), ^{
+//        MyViewController *objMyViewController = [[MyViewController alloc]init];
+//        [self.navigationController pushViewController:objMyViewController animated:YES];
+//    });
+//    
+//}
 
 -(void)btnClickedGoToMyVC:(UIButton *)sender
 {
