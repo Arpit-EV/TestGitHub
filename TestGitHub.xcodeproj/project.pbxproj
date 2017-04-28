@@ -14,7 +14,7 @@
 		2B0C732F1EB2134C00FD4B31 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B0C732E1EB2134C00FD4B31 /* Assets.xcassets */; };
 		2B0C73321EB2134C00FD4B31 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B0C73301EB2134C00FD4B31 /* LaunchScreen.storyboard */; };
 		2B4E95BF1EB319B500FDF31B /* MyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B4E95BE1EB319B500FDF31B /* MyViewController.m */; };
-		2B4E95C21EB32B1A00FDF31B /* YourViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B4E95C11EB32B1A00FDF31B /* YourViewController.m */; };
+		2B4E95C51EB32C6800FDF31B /* CanWeCelebrateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B4E95C41EB32C6800FDF31B /* CanWeCelebrateViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,8 +30,8 @@
 		2B0C73331EB2134C00FD4B31 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2B4E95BD1EB319B500FDF31B /* MyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyViewController.h; sourceTree = "<group>"; };
 		2B4E95BE1EB319B500FDF31B /* MyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyViewController.m; sourceTree = "<group>"; };
-		2B4E95C01EB32B1A00FDF31B /* YourViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YourViewController.h; sourceTree = "<group>"; };
-		2B4E95C11EB32B1A00FDF31B /* YourViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YourViewController.m; sourceTree = "<group>"; };
+		2B4E95C31EB32C6800FDF31B /* CanWeCelebrateViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CanWeCelebrateViewController.h; sourceTree = "<group>"; };
+		2B4E95C41EB32C6800FDF31B /* CanWeCelebrateViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CanWeCelebrateViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,8 +70,8 @@
 				2B0C73291EB2134C00FD4B31 /* ViewController.m */,
 				2B4E95BD1EB319B500FDF31B /* MyViewController.h */,
 				2B4E95BE1EB319B500FDF31B /* MyViewController.m */,
-				2B4E95C01EB32B1A00FDF31B /* YourViewController.h */,
-				2B4E95C11EB32B1A00FDF31B /* YourViewController.m */,
+				2B4E95C31EB32C6800FDF31B /* CanWeCelebrateViewController.h */,
+				2B4E95C41EB32C6800FDF31B /* CanWeCelebrateViewController.m */,
 				2B0C732B1EB2134C00FD4B31 /* Main.storyboard */,
 				2B0C732E1EB2134C00FD4B31 /* Assets.xcassets */,
 				2B0C73301EB2134C00FD4B31 /* LaunchScreen.storyboard */,
@@ -165,7 +165,7 @@
 				2B0C73271EB2134C00FD4B31 /* AppDelegate.m in Sources */,
 				2B4E95BF1EB319B500FDF31B /* MyViewController.m in Sources */,
 				2B0C73241EB2134C00FD4B31 /* main.m in Sources */,
-				2B4E95C21EB32B1A00FDF31B /* YourViewController.m in Sources */,
+				2B4E95C51EB32C6800FDF31B /* CanWeCelebrateViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

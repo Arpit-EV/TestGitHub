@@ -1,5 +1,5 @@
 //
-//  YourViewController.h
+//  CanWeCelebrateViewController.h
 //  TestGitHub
 //
 //  Created by Arpit Sharma on 28/04/17.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface YourViewController : UIViewController
+@interface CanWeCelebrateViewController : UIViewController
 
 @end
